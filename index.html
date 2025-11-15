@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPlus - Cursos Online Profissionalizantes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <span class="logo-icon">🎓</span>
+                LearnPlus
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#categories">Categorias</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#why-choose">Por que nós?</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Entrar</a>
+                <a href="#cta" class="btn btn-primary">Cadastrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Aprenda com os Melhores Especialistas do Mercado</h1>
+            <p class="hero-subtitle">
+                Mais de 1.000 cursos em tecnologia, design, negócios e muito mais. 
+                Transforme sua carreira com educação de qualidade.
+            </p>
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-secondary">Explorar Cursos</a>
+                <a href="#cta" class="btn btn-accent">Começar Agora</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Estudantes Ativos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1.2K+</div>
+                    <div class="stat-label">Cursos Disponíveis</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfação dos Alunos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categories" id="categories">
+        <h2 class="section-title">Categorias Populares</h2>
+        <p class="section-subtitle">
+            Explore nossos cursos por área de conhecimento
+        </p>
+        <div class="categories-grid">
+            <div class="category-card" data-category="tech">
+                <div class="category-icon">💻</div>
+                <h3 class="category-title">Tecnologia</h3>
+                <div class="category-count">320 cursos</div>
+            </div>
+            <div class="category-card" data-category="design">
+                <div class="category-icon">🎨</div>
+                <h3 class="category-title">Design</h3>
+                <div class="category-count">180 cursos</div>
+            </div>
+            <div class="category-card" data-category="business">
+                <div class="category-icon">💼</div>
+                <h3 class="category-title">Negócios</h3>
+                <div class="category-count">150 cursos</div>
+            </div>
+            <div class="category-card" data-category="marketing">
+                <div class="category-icon">📈</div>
+                <h3 class="category-title">Marketing</h3>
+                <div class="category-count">120 cursos</div>
+            </div>
+            <div class="category-card" data-category="photography">
+                <div class="category-icon">📷</div>
+                <h3 class="category-title">Fotografia</h3>
+                <div class="category-count">90 cursos</div>
+            </div>
+            <div class="category-card" data-category="music">
+                <div class="category-icon">🎵</div>
+                <h3 class="category-title">Música</h3>
+                <div class="category-count">75 cursos</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos em Destaque -->
+    <section class="featured-courses" id="courses">
+        <h2 class="section-title">Cursos em Destaque</h2>
+        <p class="section-subtitle">
+            Os cursos mais populares entre nossos estudantes
+        </p>
+        <div class="courses-grid">
+            <!-- Curso 1 -->
+            <div class="course-card" data-course="1">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&w=400" alt="Desenvolvimento Web" class="course-image">
+                <div class="course-content">
+                    <span class="course-category">Tecnologia</span>
+                    <span class="badge badge-popular">Popular</span>
+                    <h3 class="course-title">Desenvolvimento Web Full Stack</h3>
+                    <div class="course-instructor">
+                        <div class="instructor-avatar"></div>
+                        <span>Prof. João Silva</span>
+                    </div>
+                    <div class="course-meta">
+                        <div class="course-rating">
+                            ⭐⭐⭐⭐⭐ <span>4.9 (2.1k)</span>
+                        </div>
+                        <div class="course-duration">⏱️ 42h</div>
+                    </div>
+                    <div class="course-price">
+                        R$ 297,00 <span class="original">R$ 597,00</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openCourseModal(1)">
+                        Ver Curso
+                    </button>
+                </div>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="course-card" data-course="2">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&w=400" alt="UI/UX Design" class="course-image">
+                <div class="course-content">
+                    <span class="course-category">Design</span>
+                    <span class="badge badge-new">Novo</span>
+                    <h3 class="course-title">UI/UX Design Profissional</h3>
+                    <div class="course-instructor">
+                        <div class="instructor-avatar"></div>
+                        <span>Profa. Maria Santos</span>
+                    </div>
+                    <div class="course-meta">
+                        <div class="course-rating">
+                            ⭐⭐⭐⭐⭐ <span>4.8 (1.5k)</span>
+                        </div>
+                        <div class="course-duration">⏱️ 36h</div>
+                    </div>
+                    <div class="course-price">
+                        R$ 247,00 <span class="original">R$ 497,00</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openCourseModal(2)">
+                        Ver Curso
+                    </button>
+                </div>
+            </div>
+
+            <!-- Curso 3 -->
+            <div class="course-card" data-course="3">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&w=400" alt="Data Science" class="course-image">
+                <div class="course-content">
+                    <span class="course-category">Tecnologia</span>
+                    <h3 class="course-title">Data Science e Machine Learning</h3>
+                    <div class="course-instructor">
+                        <div class="instructor-avatar"></div>
+                        <span>Prof. Carlos Oliveira</span>
+                    </div>
+                    <div class="course-meta">
+                        <div class="course-rating">
+                            ⭐⭐⭐⭐⭐ <span>4.9 (1.8k)</span>
+                        </div>
+                        <div class="course-duration">⏱️ 48h</div>
+                    </div>
+                    <div class="course-price">
+                        R$ 397,00 <span class="original">R$ 797,00</span>
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openCourseModal(3)">
+                        Ver Curso
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por que escolher nós -->
+    <section class="why-choose" id="why-choose">
+        <h2 class="section-title">Por que Escolher a LearnPlus?</h2>
+        <p class="section-subtitle">
+            Diferenciais que fazem a diferença na sua jornada de aprendizado
+        </p>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">Aprendizado Focado</h3>
+                <p class="feature-description">
+                    Cursos práticos com projetos reais que preparam você para o mercado de trabalho.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">👨‍🏫</div>
+                <h3 class="feature-title">Instrutores Especialistas</h3>
+                <p class="feature-description">
+                    Aprenda com profissionais atuantes no mercado e com vasta experiência.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📱</div>
+                <h3 class="feature-title">Acesso Vitalício</h3>
+                <p class="feature-description">
+                    Acesso ilimitado aos cursos, com atualizações gratuitas para sempre.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🏆</div>
+                <h3 class="feature-title">Certificado Reconhecido</h3>
+                <p class="feature-description">
+                    Certificado digital válido em todo território nacional.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💬</div>
+                <h3 class="feature-title">Comunidade Ativa</h3>
+                <p class="feature-description">
+                    Faça networking com milhares de estudantes e profissionais.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Suporte Rápido</h3>
+                <p class="feature-description">
+                    Nossa equipe está sempre disponível para ajudar no que precisar.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">O que Nossos Alunos Dizem</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "Comprei o curso de Desenvolvimento Web e em 3 meses já consegui 
+                    meu primeiro emprego como desenvolvedor júnior. A didática é excelente!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                        <h4>Pedro Henrique</h4>
+                        <p>Desenvolvedor Full Stack</p>
+                        <div class="author-course">Desenvolvimento Web Full Stack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "O curso de UI/UX superou minhas expectativas. Os projetos práticos 
+                    me deram confiança para migrar de carreira e hoje trabalho em uma grande empresa."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                        <h4>Ana Carolina</h4>
+                        <p>UI/UX Designer</p>
+                        <div class="author-course">UI/UX Design Profissional</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "A plataforma é incrível! Consegui me especializar em Data Science 
+                    enquanto trabalhava em tempo integral. O suporte é muito atencioso."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                        <h4>Ricardo Almeida</h4>
+                        <p>Data Scientist</p>
+                        <div class="author-course">Data Science e Machine Learning</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="cta-content">
+            <h2 class="cta-title">Pronto para Transformar Sua Carreira?</h2>
+            <p class="cta-subtitle">
+                Junte-se a mais de 50.000 estudantes e comece sua jornada hoje mesmo
+            </p>
+            <form class="cta-form" id="ctaForm">
+                <input type="email" placeholder="Seu melhor email" required>
+                <button type="submit" class="btn btn-secondary" id="submitBtn">
+                    <span id="buttonText">Começar Agora</span>
+                </button>
+            </form>
+            <p style="margin-top: 1rem; opacity: 0.8; font-size: 0.9rem;">
+                7 dias grátis • Cancele a qualquer momento
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>LearnPlus</h3>
+                <p>Transformando vidas através da educação de qualidade. Cursos online profissionalizantes para todas as áreas.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📹</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Categorias</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Tecnologia</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Negócios</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Fotografia</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Empresa</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Parcerias</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Suporte</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LearnPlus. Todos os direitos reservados.
