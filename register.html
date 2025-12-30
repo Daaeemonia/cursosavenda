@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPlus - Criar Conta Gratuita</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <!-- Header Simples -->
+    <header class="header auth-header">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🎓</span>
+                LearnPlus
+            </a>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Já tenho conta</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1 class="auth-title">Comece sua jornada!</h1>
+                <p class="auth-subtitle">Crie sua conta gratuitamente</p>
+            </div>
+
+            <form class="auth-form" id="registerForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">Nome</label>
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            name="firstName"
+                            placeholder="Seu nome"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Sobrenome</label>
+                        <input 
+                            type="text" 
+                            id="lastName" 
+                            name="lastName"
+                            placeholder="Seu sobrenome"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        placeholder="seu@email.com"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password"
+                        placeholder="Crie uma senha forte"
+                        required>
+                    <div class="password-strength">
+                        <div class="strength-meter">
+                            <div class="strength-bar"></div>
+                        </div>
+                        <div class="strength-text">Força da senha</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmar Senha</label>
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        name="confirmPassword"
+                        placeholder="Digite a senha novamente"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <span>
+                            Concordo com os 
+                            <a href="#" class="terms-link">Termos de Uso</a> e 
+                            <a href="#" class="terms-link">Política de Privacidade</a>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox">
+                        <input type="checkbox" id="newsletter" checked>
+                        <span>
+                            Desejo receber atualizações sobre novos cursos e ofertas especiais
+                        </span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary auth-btn">
+                    <span id="registerBtnText">Criar conta gratuita</span>
+                </button>
+
+                <div class="auth-divider">
+                    <span>ou cadastre-se com</span>
+                </div>
+
+                <div class="social-auth">
+                    <button type="button" class="btn btn-social google-btn">
+                        <span class="social-icon">🔍</span>
+                        Google
+                    </button>
+                    <button type="button" class="btn btn-social github-btn">
+                        <span class="social-icon">💻</span>
+                        GitHub
+                    </button>
+                </div>
+
+                <div class="auth-footer">
+                    <p>
+                        Já tem uma conta? 
+                        <a href="login.html" class="auth-link">Entre aqui</a>
+                    </p>
+                </div>
+            </form>
+
+            <div class="auth-features">
+                <div class="feature">
+                    <span class="feature-icon">🎁</span>
+                    <span>7 dias grátis</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📚</span>
+                    <span>Acesso a 50+ cursos</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🏆</span>
+                    <span>Certificado gratuito</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-side">
+            <div class="benefit-card">
+                <div class="benefit-icon">🚀</div>
+                <h3>Comece a aprender hoje</h3>
+                <p>Acesso imediato a todos os cursos após o cadastro</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">💼</div>
+                <h3>Impulsione sua carreira</h3>
+                <p>80% dos nossos alunos conseguem melhores empregos</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">👥</div>
+                <h3>Junte-se à comunidade</h3>
+                <p>Faça parte de uma rede de 50.000 profissionais</p>
+            </div>
+
+            <div class="course-preview">
+                <h3>Curso grátis incluído:</h3>
+                <div class="preview-course">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&w-300" alt="Web Development">
+                    <div class="preview-info">
+                        <h4>Introdução ao Desenvolvimento Web</h4>
+                        <div class="preview-meta">
+                            <span>12 aulas</span>
+                            <span>•</span>
+                            <span>8 horas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Register Form Handler
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const registerBtnText = document.getElementById('registerBtnText');
+            const originalText = registerBtnText.textContent;
+            
+            // Validação básica
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('As senhas não coincidem!');
+                return;
+            }
+            
+            if (!document.getElementById('terms').checked) {
+                alert('Você precisa aceitar os termos de uso!');
+                return;
+            }
+            
+            // Simular processamento
+            registerBtnText.textContent = 'Criando conta...';
+            this.classList.add('loading');
+            
+            // Simulação de cadastro
+            setTimeout(() => {
+                // Redirecionar para página de boas-vindas
+                window.location.href = 'welcome.html';
+            }, 2000);
+        });
+        
+        // Password strength indicator
+        const passwordInput = document.getElementById('password');
+        const strengthBar = document.querySelector('.strength-bar');
+        const strengthText = document.querySelector('.strength-text');
+        
+        passwordInput.addEventListener('input', function() {
+            const password = this.value;
+            let strength = 0;
+            
+            if (password.length >= 8) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[^A-Za-z0-9]/.test(password)) strength++;
+            
+            const colors = ['#ef4444', '#f59e0b', '#10b981', '#10b981'];
+            const texts = ['Fraca', 'Média', 'Forte', 'Muito forte'];
+            
+            strengthBar.style.width = `${strength * 25}%`;
+            strengthBar.style.backgroundColor = colors[strength];
+            strengthText.textContent = texts[strength] || 'Fraca';
+        });
+    </script>
+</body>
+</html>
