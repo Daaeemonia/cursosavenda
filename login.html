@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPlus - Entrar na Plataforma</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <!-- Header Simples -->
+    <header class="header auth-header">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🎓</span>
+                LearnPlus
+            </a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1 class="auth-title">Bem-vindo de volta!</h1>
+                <p class="auth-subtitle">Entre na sua conta para continuar aprendendo</p>
+            </div>
+
+            <form class="auth-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        placeholder="seu@email.com"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password"
+                        placeholder="Sua senha"
+                        required>
+                    <div class="password-options">
+                        <label class="checkbox">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Lembrar-me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Esqueci minha senha</a>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary auth-btn">
+                    <span id="loginBtnText">Entrar na conta</span>
+                </button>
+
+                <div class="auth-divider">
+                    <span>ou continue com</span>
+                </div>
+
+                <div class="social-auth">
+                    <button type="button" class="btn btn-social google-btn">
+                        <span class="social-icon">🔍</span>
+                        Google
+                    </button>
+                    <button type="button" class="btn btn-social github-btn">
+                        <span class="social-icon">💻</span>
+                        GitHub
+                    </button>
+                </div>
+
+                <div class="auth-footer">
+                    <p>
+                        Não tem uma conta? 
+                        <a href="register.html" class="auth-link">Cadastre-se gratuitamente</a>
+                    </p>
+                </div>
+            </form>
+
+            <div class="auth-features">
+                <div class="feature">
+                    <span class="feature-icon">✅</span>
+                    <span>Acesso a todos os cursos</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🔄</span>
+                    <span>Continue de onde parou</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📊</span>
+                    <span>Acompanhe seu progresso</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-side">
+            <div class="auth-quote">
+                <div class="quote-icon">💬</div>
+                <blockquote>
+                    "A plataforma LearnPlus mudou minha carreira. 
+                    Em 6 meses migrei para área de tecnologia com um salário 3x maior."
+                </blockquote>
+                <div class="quote-author">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                        <h4>Carlos Eduardo</h4>
+                        <p>Desenvolvedor Full Stack</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auth-stats">
+                <div class="stat">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Estudantes satisfeitos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">1.2K+</div>
+                    <div class="stat-label">Cursos disponíveis</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Taxa de aprovação</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Login Form Handler
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const loginBtnText = document.getElementById('loginBtnText');
+            const originalText = loginBtnText.textContent;
+            
+            // Simular processamento
+            loginBtnText.textContent = 'Entrando...';
+            this.classList.add('loading');
+            
+            // Simulação de login
+            setTimeout(() => {
+                // Redirecionar para dashboard
+                window.location.href = 'index.html';
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
